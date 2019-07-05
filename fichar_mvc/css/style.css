@@ -1,0 +1,124 @@
+/*  
+    #dd5coo
+    #e88402
+    #191919
+    #424242
+    #ededed
+*/
+
+body{
+    height: 100vh;
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+}
+
+.h2, h2 {
+    font-size: 1.9rem;
+}
+
+main{
+    position: relative;
+}
+.icon-name{
+    top: 20px;
+}
+.material-icons{
+    font-size: 60px;
+}
+.logotipo a{
+    color: rgb(0, 0, 0)
+}
+a{
+    color: rgba(255, 126, 6, 0.911);
+}
+.logotipo a:hover, a:hover{
+    color: #DD5C00;
+}
+.card{
+    position: absolute;
+    top: 50px;
+    left: 25%;
+    border: 1px solid rgba(255, 126, 6, 0.911);
+    -webkit-box-shadow: 0px 0px 300px -40px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 300px -40px rgba(0,0,0,1);
+    box-shadow: 0px 0px 300px -40px rgba(0,0,0,1);
+}
+.card-header{
+    background-color: #DD5C00;
+}
+.btn-orangered {
+    color: #fff;
+    background-color: #E88402;
+    border-color: #E88402;
+}
+.btn-orangered:hover{
+    color: #fff;
+    background-color: #DD5C00;
+    border-color: #DD5C00;
+}
+.btn-orangered:focus{
+    border-color: orange;
+    box-shadow: 0 0 0 0.2rem rgba(255, 176, 0, 0.25);
+}
+.inp-usuario:focus{
+    border-color: orange;
+    box-shadow: 0 0 0 0.2rem rgba(255, 176, 0, 0.25);
+}
+.inp-usuario-error {
+    border-color: rgb(255, 5, 5);
+}
+
+.info{
+    margin-top: 5px;
+    width: 200px;
+    top: 80%;
+    z-index: 5;
+    /* display: inline; */
+    max-width: 100%;
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    color: #fff;
+    background-color: rgba(218, 0, 0, 0.9);
+    border-radius: .25rem;
+}
+
+/* Animación de muestra */
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2 alternate-reverse both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2 alternate-reverse both;
+}
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+}
+@keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+}
+/* ajustar los márgenes a las tarjetas */
+@media (max-width: 715px) {
+    .card {
+        left: 15%;
+        width: 70%;
+    }
+}
+@media (min-width: 715px) {
+    .card {
+        width: 50%;
+    }
+}
